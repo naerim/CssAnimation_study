@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        perspective: 1000px;
+      }
+      img {
+        width: 300px;
+        display: block;
+        margin: auto;
+        margin-top: 200px;
+        transition: transform 1s;
+      }
+      img:hover {
+        transform: translateZ(300px);
+        /* z축 추가하려면 perspective 추가해줘야함 */
+      }
+    </style>
+  </head>
+  <body>
+    <img src="그리즐리1.jpeg" alt="" />
+  </body>
+</html>
